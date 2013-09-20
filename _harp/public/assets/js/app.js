@@ -23,7 +23,7 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 3100) {
+        if (scroll >= 3080) {
             header.removeClass('stickytop').addClass("stickybottom");
         } else {
             header.removeClass("stickybottom").addClass('stickytop');
@@ -37,7 +37,7 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 3100) {
+        if (scroll >= 3080) {
             header.removeClass('stickytop-screen').addClass("stickybottom-screen");
         } else {
             header.removeClass("stickybottom-screen").addClass('stickytop-screen');
@@ -51,7 +51,7 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 600) {
+        if (scroll >= 500) {
             header.addClass("iPhone-Two");
         } else {
             header.removeClass("iPhone-Two");
@@ -79,13 +79,42 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 1800) {
+        if (scroll >= 1700) {
             header.addClass("iPhone-Four");
         } else {
             header.removeClass("iPhone-Four");
         }
     });
 }); 
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".iPhone");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 2300) {
+            header.addClass("iPhone-Five");
+        } else {
+            header.removeClass("iPhone-Five");
+        }
+    });
+});
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".iPhone");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 2850) {
+            header.addClass("iPhone-Six");
+        } else {
+            header.removeClass("iPhone-Six");
+        }
+    });
+}); 
+
 // classie - class helper functions from bonzo https://github.com/ded/bonzo
 
 ( function( window ) {

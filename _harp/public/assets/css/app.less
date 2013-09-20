@@ -239,12 +239,10 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 
 /* Video Head */
-
 .video-head{
-  margin-top:60px;
   background:url(../img/screenshot.jpg) top center no-repeat;
-  background-size:cover;
-  height:300px;
+  background-size: cover;
+  height:auto;
   width:auto;
   display:block;
   video{
@@ -260,14 +258,45 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 .video-inner{
   color:#ffffff;
   position:absolute;
-  top:120px;
-  left:10px;
+  top:330px;;
+  left:100px;
+  font-weight: 100;
   h1{
     margin-bottom:40px;
     font-size: 26px;
     width:400px;
     line-height:.06;
     font-weight: 400;
+  }
+}
+.video-head-static{
+  display: none;
+}
+
+
+.touch{
+  .video-head{
+    display: none;
+  }
+  .video-head-static{
+    background:url(../img/screenshot.jpg) top left no-repeat;
+    background-size: cover;
+    height:400px;
+    width:auto;
+    display: block;
+  }
+  .video-inner{
+    color:#ffffff;
+    position:absolute;
+    top:290px;
+    left:10px;
+    h1{
+      margin-bottom:40px;
+      font-size: 26px;
+      width:400px;
+      line-height:.06;
+      font-weight: 400;
+    }
   }
 }
 /* Airsonea Features */
@@ -626,6 +655,17 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	}
 
 }
+.app-title{
+  margin-top: 20px; 
+}
+.breg{
+  vertical-align: top;
+  font-size: 10px;
+}
+.asreg{
+  vertical-align: top;
+  font-size: 18px;
+}
 .block{
 	display: block;
 	background: @white;
@@ -677,7 +717,6 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	}
 }
 .measure{
-	text-align: center;
 	position: absolute;
 	display: block;
 	margin-top: 1500px;
@@ -694,15 +733,18 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 		margin-top: 50px;
 		max-width: 400px;
 	}
-	li{
-  	margin-bottom: 5px;
+	ul{
+  	list-style: none;
+  	li{
+    	margin-bottom: 10px;
+  	}
 	}
 }
 .measurement{
 	text-align: center;
 	position: absolute;
 	display: block;
-	margin-top: 2050px;
+	margin-top: 1975px;
 	color: @black;
 	z-index: 4;
 	a{
@@ -750,7 +792,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	text-align: center;
 	position: absolute;
 	display: block;
-	margin-top: 3780px;
+	margin-top: 3800px;
 	color: @white;
 	z-index: 4;
 	h1{
@@ -768,7 +810,6 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 		max-width: 90%;
 	}
 }
-
 .form-control{
 	margin-bottom: 5px;
 }
@@ -779,6 +820,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 .eighthundred{
   position: fixed;
+  text-align: right;
   top: 80%;
   right: 0;
   display: block;
@@ -789,8 +831,24 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
   a{
     color: @white;
   }
-  h5{
+  .need-help{
     margin: 0;
+    border-bottom: 1px solid @white;
+    padding-bottom: 10px;
+  }
+}
+.download-link{
+  padding-top: 9px;
+  display: block;
+  padding-bottom: 0;
+  margin-bottom: 0;
+} 
+.twoapps{
+  display: block;
+  color: @white;
+  padding: 0 0 10px 0;
+  &:hover{
+    color: @white;
   }
 }
 .dob, .dop{
@@ -816,7 +874,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	z-index: 3;
 }
 .iPhone{
-  background: url(../img/camera_pano_screen.jpg) no-repeat;
+  background: url(../img/app-start.jpg) no-repeat;
   background-size: cover;
   display: block;
   position: fixed;
@@ -829,7 +887,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	z-index: 2;
 }
 .iPhone-Two{
-  background: url(../img/airdrop_share_screen.jpg) no-repeat;
+  background: url(../img/store_screen.jpg) no-repeat;
   background-size: cover;
   display: block;
   position: fixed;
@@ -843,7 +901,46 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 
 .iPhone-Three{
-  background: url(../img/camera_video_screen.jpg) no-repeat;
+  background: url(../img/app-bluetooth.jpg) no-repeat;
+  background-size: cover;
+  display: block;
+  position: fixed;
+	height: auto;
+	left: 25%;
+	margin-left: 17px;	
+	top: 180px;
+	width: 168px;
+	height: 299px;
+	z-index: 2;
+}
+.iPhone-Four{
+  background: url(../img/app-throat-hint.jpg) no-repeat;
+  background-size: cover;
+  display: block;
+  position: fixed;
+	height: auto;
+	left: 25%;
+	margin-left: 17px;	
+	top: 180px;
+	width: 168px;
+	height: 299px;
+	z-index: 2;
+}
+.iPhone-Five{
+  background: url(../img/app-19.jpg) no-repeat;
+  background-size: cover;
+  display: block;
+  position: fixed;
+	height: auto;
+	left: 25%;
+	margin-left: 17px;	
+	top: 180px;
+	width: 168px;
+	height: 299px;
+	z-index: 2;
+}
+.iPhone-Six{
+  background: url(../img/CloudSplash.jpg) no-repeat;
   background-size: cover;
   display: block;
   position: fixed;
@@ -857,13 +954,23 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 .stickybottom{
 	position: absolute;
-	top: 3190px;
+	top: 3200px;
 	margin-bottom: 540px;
 }
 .stickybottom-screen{
 	position: absolute;
-	top: 3250px;
+	top: 3260px;
 	margin-bottom: 540px;
+}
+.powerslide-btn{
+  float: left;
+  width: 140px;
+  padding-right: 20px;
+  height: auto;
+}
+.trade{
+  font-size: 20px;
+  vertical-align: top;
 }
 @media (min-width: @screen-sm){
   .airsonea-lead{
@@ -951,7 +1058,6 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 			}
 		}	
 	}
-	.video-head{margin-top:0;background: url(../img/screenshot.jpg) top center no-repeat;background-size:cover;height:auto;width:auto;display:block;}.video-head video{display:block;min-width:100%;max-width:100%;min-height:auto;} .video-head source{width:auto;}
 	.register{
 	position: absolute;
 	display: block;
@@ -1028,13 +1134,13 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	.step{
 		margin-top: 50px;
 		max-width: 400px;
-	}
+	}	 
 }
 .measurement{
 	text-align: left;
 	position: absolute;
 	display: block;
-	margin-top: 2050px;
+	margin-top: 1975px;
 	color: @black;
 	z-index: 4;
 	margin-left: 50%;
