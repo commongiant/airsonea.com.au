@@ -185,20 +185,18 @@ var menuLeft = document.getElementById( 'cbp-spmenu' ),
 			};
 
 
-
-
-
-
 (function ($) {
     $(document).ready(function () {
       var playerDiv = $("#ytChanPlayer");
       playerDiv.ytChanPlayer({
+        username: 'soundasthma',
+        maxResults: 12,
         sticky: 'bZGLCBFSNck'
       }); 
        $(".yt-channel-list").before("<p class='tagline'></p>") 
     });
   }(jQuery));
-
+			
 // jQuery Youtube Channel Player 0.1.3 Author: Marc Loehe (boundaryfunctions)
 
 (function ($) {
@@ -210,10 +208,10 @@ var menuLeft = document.getElementById( 'cbp-spmenu' ),
       $ytListInner = $('<div/>', {'class': 'yt-channel-list-inner'}),
       $ytContainer = $('<div/>', {'class': 'embed-container'}),
       options = $.extend({}, {
-        username: 'soundasthma',
+        username: '',
         query: '',
         startIndex: 1,
-        maxResults: 12,
+        maxResults: 10,
         orderBy: 'published',
         playerOpts: {
           autohide: 1,
@@ -233,7 +231,7 @@ var menuLeft = document.getElementById( 'cbp-spmenu' ),
             'orderby=' + options.orderBy,
             'start-index=' + options.startIndex,
             'max-results=' + options.maxResults,
-            'callback=?',
+            'callback=?'
           ];
         if (options.username !== '') {
           params.push('author=' + options.username);
@@ -335,6 +333,31 @@ var menuLeft = document.getElementById( 'cbp-spmenu' ),
 
 }(jQuery));
 
+jQuery(function() {
+   jQuery.support.placeholder = false;
+   test = document.createElement('input');
+   if('placeholder' in test) jQuery.support.placeholder = true;
+});
+// This adds placeholder support to browsers that wouldn't otherwise support it. 
+$(function() {
+   if(!$.support.placeholder) { 
+      var active = document.activeElement;
+      $(':text').focus(function () {
+         if ($(this).attr('placeholder') != '' && $(this).val() == $(this).attr('placeholder')) {
+            $(this).val('').removeClass('hasPlaceholder');
+         }
+      }).blur(function () {
+         if ($(this).attr('placeholder') != '' && ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))) {
+            $(this).val($(this).attr('placeholder')).addClass('hasPlaceholder');
+         }
+      });
+      $(':text').blur();
+      $(active).focus();
+      $('form:eq(0)').submit(function () {
+         $(':text.hasPlaceholder').val('');
+      });
+   }
+});
 $(".form-foot").on('submit', function(e) {
   var form = this;
  
