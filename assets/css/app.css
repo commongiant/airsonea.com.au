@@ -696,13 +696,17 @@ footer .form-group{margin-right:10px;}
 .cbp-spmenu-push-toright{left:240px;}
 .cbp-spmenu,.cbp-spmenu-push{-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;transition:all 0.3s ease;}
 body.modal-open,.modal-open .navbar-fixed-top,.modal-open .navbar-fixed-bottom{margin-right:0;}
-.video-head{background:url(../img/screenshot.jpg) top center no-repeat;background-size:cover;height:auto;width:auto;display:block;}.video-head video{display:block;min-width:100%;max-width:100%;min-height:auto;}
-.video-head source{width:auto;}
 .video-inner{color:#ffffff;position:absolute;top:330px;left:100px;font-weight:100;}.video-inner h1{margin-bottom:40px;font-size:26px;width:400px;line-height:.06;font-weight:400;}
-.video-head-static{display:none;}
-.touch .video-head{display:none;}
-.touch .video-head-static{background:url(../img/screenshot.jpg) top left no-repeat;background-size:cover;height:400px;width:auto;display:block;}
-.touch .video-inner{color:#ffffff;position:absolute;top:290px;left:10px;}.touch .video-inner h1{margin-bottom:40px;font-size:26px;width:400px;line-height:.06;font-weight:400;}
+.video-head-static{background:url(../img/CathyFreeman.jpg) top right no-repeat;background-size:cover;height:500px;width:auto;display:block;}
+.video-inner{color:#ffffff;position:absolute;top:290px;left:10px;}.video-inner h1{margin-bottom:40px;font-size:26px;width:400px;line-height:.06;font-weight:400;}
+.videos{padding:40px 0;}
+.videos h4{margin-bottom:30px;}
+.yt-player{height:360px;display:inline-block;border:none;}
+.yt-channel-list{height:360px;width:48%;overflow-x:scroll;}
+.yt-channel-list .yt-channel-list-inner{width:1500px;}
+.yt-channel-list .yt-channel-video{display:inline-block;}
+.yt-channel-list .yt-channel-video img{height:180px;width:auto;padding:5px;}
+.more-yt{margin-top:20px;}
 .airsonea-lead{margin-top:0;margin-bottom:40px;}
 .airsoneafeatures{color:#ffffff;background:url(../img/bluebg.jpg) center center no-repeat;background-size:cover;padding:30px 0;padding:50px 0;}.airsoneafeatures a{color:#ffffff;}
 .airsoneafeatures h1{margin-bottom:30px;margin-top:0;}
