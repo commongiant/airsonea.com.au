@@ -765,6 +765,8 @@ body.modal-open,.modal-open .navbar-fixed-top,.modal-open .navbar-fixed-bottom{m
 .stay-informed .action-icons .btn{margin-right:10px;}
 .stay-informed .action-icons a{display:inline-block;padding-right:10px;}
 .stay-informed h4{margin-bottom:3px;padding:0;}
+.faq-title{margin:30px auto;}
+.devices-list{list-style:none;}
 .getstarted .navbar{background:#ffffff;}
 .section-bg-first{position:absolute;background:#00556f;height:500px;width:100%;}.section-bg-first .arrow-wrap{position:absolute;width:100%;margin:500px auto 0;overflow:hidden;height:200px;}
 .section-bg-first .arrow-down{position:absolute;display:block;left:50%;width:0;margin-left:-950px;height:0;overflow-x:hidden;border-left:950px solid transparent;border-right:950px solid transparent;border-top:200px solid #00556f;}
